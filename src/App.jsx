@@ -256,7 +256,7 @@ export default function App() {
 
         <div className="grid md:grid-cols-2 gap-8">
           <div className="bg-slate-900 p-8 rounded-2xl border border-slate-800 hover:border-blue-500 hover:-translate-y-2 transition duration-300">
-            <h3 className="text-2xl font-semibold mb-4">
+            <h3 className="text-2xl font-semibold mb-4 text-blue-400">
               Retail Performance Dashboard
             </h3>
             <p className="text-slate-300 leading-7 mb-5">
@@ -269,7 +269,7 @@ export default function App() {
         </div>
 
         <div className="bg-slate-900 p-8 rounded-2xl border border-slate-800 hover:border-blue-500 hover:-translate-y-2 transition duration-300">
-          <h3 className="text-2xl font-semibold mb-4">
+          <h3 className="text-2xl font-semibold mb-4 text-blue-400">
             Training Centre Data App
           </h3>
           <p className="text-slate-300 leading-7 mb-5">
