@@ -251,36 +251,71 @@ export default function App() {
         </div>
       </section>
       {/* PROJECTS */}
-      <section id="projects" className="py-24 px-6 max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold mb-12">Projects</h2>
+<section id="projects" className="py-24 px-6 max-w-6xl mx-auto">
 
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="bg-slate-900 p-8 rounded-2xl border border-slate-800 hover:border-blue-500 hover:-translate-y-2 transition duration-300">
-            <h3 className="text-2xl font-semibold mb-4 text-blue-400">
-              Retail Performance Dashboard
-            </h3>
-            <p className="text-slate-300 leading-7 mb-5">
-              Built a professional Excel reporting dashboard for tracking store sales,
-              branch performance, department performance, monthly variance, and growth insights.
-            </p>
-            <p className="text-sm text-blue-400">
-              Excel • Dashboards • Data Analysis • Reporting
-            </p>
-        </div>
+  <h2 className="text-4xl font-bold mb-12">
+    Projects
+  </h2>
 
-        <div className="bg-slate-900 p-8 rounded-2xl border border-slate-800 hover:border-blue-500 hover:-translate-y-2 transition duration-300">
-          <h3 className="text-2xl font-semibold mb-4 text-blue-400">
-            Training Centre Data App
-          </h3>
-          <p className="text-slate-300 leading-7 mb-5">
-            Created a MySQL-based application to store, manage, and organise
-            training centre records more efficiently.
-          </p>
-          <p className="text-sm text-blue-400">
-            MySQL • Database Design • Visual Studio
-          </p>
-          </div>
-        </div>
+  <div className="grid md:grid-cols-2 gap-10">
+
+    {/* PROJECT 1 */}
+    <div className="bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 hover:border-blue-500 hover:-translate-y-2 transition duration-300">
+
+      <img
+        src="/dashboard.png"
+        alt="Retail Dashboard"
+        className="w-full h-64 object-cover"
+      />
+
+      <div className="p-8">
+
+        <h3 className="text-2xl font-semibold mb-4 text-blue-400">
+          Grocery Store Performance Dashboard
+        </h3>
+
+        <p className="text-slate-300 leading-7 mb-5">
+          Built a professional Excel reporting dashboard for tracking branch
+          sales, department performance, growth trends, variance analysis,
+          and automatic business insights across multiple grocery stores.
+        </p>
+
+        <p className="text-sm text-blue-400">
+          Excel • Dashboards • Reporting • Data Analysis
+        </p>
+
+      </div>
+    </div>
+
+    {/* PROJECT 2 */}
+    <div className="bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 hover:border-blue-500 hover:-translate-y-2 transition duration-300">
+
+      <img
+        src="/snylearn.png"
+        alt="SnyLearn System"
+        className="w-full h-64 object-cover"
+      />
+
+      <div className="p-8">
+
+        <h3 className="text-2xl font-semibold mb-4 text-blue-400">
+          SnyLearn Student Management System
+        </h3>
+
+        <p className="text-slate-300 leading-7 mb-5">
+          Developed a desktop-based student management system for handling
+          student registrations, management, scores, dashboards, and reporting
+          for educational administration.
+        </p>
+
+        <p className="text-sm text-blue-400">
+          Python • MySQL • Desktop Application • Database Systems
+        </p>
+
+      </div>
+    </div>
+
+  </div>
 </section>
       {/* CONTACT */}
       <section id="contact" className="py-24 px-6 max-w-4xl mx-auto">
