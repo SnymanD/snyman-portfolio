@@ -669,6 +669,17 @@ export default function App() {
         </div>
 
       </footer>
+
+      {/* FLOATING WHATSAPP BUTTON */}
+      <a
+        href="https://wa.me/27766330663"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 z-[150] bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl shadow-green-500/40 transition duration-300 hover:scale-110"
+      >
+        <FaWhatsapp className="text-3xl" />
+      </a>
+
       {/* RESUME PREVIEW MODAL */}
       {showResume && (
         <div className="fixed inset-0 bg-black/80 z-[100] flex items-center justify-center px-4">
