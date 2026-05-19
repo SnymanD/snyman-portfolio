@@ -157,7 +157,7 @@ export default function App() {
             </a>
 
             <a
-              href="https://wa.me/27837188802"
+              href="https://wa.me/27766330663"
               target="_blank"
               className="hover:text-green-400 transition"
             >
@@ -250,7 +250,38 @@ export default function App() {
           </div>
         </div>
       </section>
+      {/* PROJECTS */}
+      <section id="projects" className="py-24 px-6 max-w-6xl mx-auto">
+        <h2 className="text-4xl font-bold mb-12">Projects</h2>
 
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="bg-slate-900 p-8 rounded-2xl border border-slate-800 hover:border-blue-500 hover:-translate-y-2 transition duration-300">
+            <h3 className="text-2xl font-semibold mb-4">
+              Retail Performance Dashboard
+            </h3>
+            <p className="text-slate-300 leading-7 mb-5">
+              Built a professional Excel reporting dashboard for tracking store sales,
+              branch performance, department performance, monthly variance, and growth insights.
+            </p>
+            <p className="text-sm text-blue-400">
+              Excel • Dashboards • Data Analysis • Reporting
+            </p>
+        </div>
+
+        <div className="bg-slate-900 p-8 rounded-2xl border border-slate-800 hover:border-blue-500 hover:-translate-y-2 transition duration-300">
+          <h3 className="text-2xl font-semibold mb-4">
+            Training Centre Data App
+          </h3>
+          <p className="text-slate-300 leading-7 mb-5">
+            Created a MySQL-based application to store, manage, and organise
+            training centre records more efficiently.
+          </p>
+          <p className="text-sm text-blue-400">
+            MySQL • Database Design • Visual Studio
+          </p>
+          </div>
+        </div>
+</section>
       {/* CONTACT */}
       <section id="contact" className="py-24 px-6 max-w-4xl mx-auto">
 
