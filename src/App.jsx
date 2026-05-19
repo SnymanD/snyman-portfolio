@@ -243,12 +243,12 @@ export default function App() {
           </div>
 
           <div className="bg-slate-900 p-6 rounded-2xl border border-slate-800 hover:border-blue-500 transition">
-            <h3 className="text-4xl font-bold text-blue-400">6+</h3>
+            <h3 className="text-4xl font-bold text-blue-400">10+</h3>
             <p className="text-slate-300 mt-2">Branches Supported</p>
           </div>
 
           <div className="bg-slate-900 p-6 rounded-2xl border border-slate-800 hover:border-blue-500 transition">
-            <h3 className="text-4xl font-bold text-blue-400">3</h3>
+            <h3 className="text-4xl font-bold text-blue-400">8</h3>
             <p className="text-slate-300 mt-2">Core Skill Areas</p>
           </div>
 
