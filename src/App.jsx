@@ -20,7 +20,6 @@ import {
   SiMysql,
   SiPowerbi,
   SiCsharp,
-  SiMicrosoft,
 } from "react-icons/si"
 
 export default function App() {
@@ -319,7 +318,7 @@ export default function App() {
                 </div>
 
                 <div className="flex items-center gap-3">
-                  <SiMicrosoft className="text-green-400 text-2xl" />
+                  <FaMicrosoft className="text-green-400 text-2xl" />
                   <span>Microsoft 365</span>
                 </div>
 
@@ -361,7 +360,7 @@ export default function App() {
                 </div>
 
                 <div className="flex items-center gap-3">
-                  <SiMicrosoft className="text-green-400 text-2xl" />
+                  <FaMicrosoft className="text-green-400 text-2xl" />
                   <span>Excel Dashboards</span>
                 </div>
 
