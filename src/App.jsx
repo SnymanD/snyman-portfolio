@@ -35,6 +35,7 @@ export default function App() {
   const [isSending, setIsSending] = useState(false)
   const [statusMessage, setStatusMessage] = useState("")
   const [statusType, setStatusType] = useState("")
+  const [showResume, setShowResume] = useState(false)
 
   const fadeUp = {
     hidden: { opacity: 0, y: 40 },
@@ -167,13 +168,12 @@ export default function App() {
               View Projects
             </a>
 
-            <a
-              href="/cv.pdf"
-              download
+            <button
+              onClick={() => setShowResume(true)}
               className="border border-slate-500 hover:border-blue-400 px-8 py-3 rounded-xl font-medium"
             >
-              Download CV
-            </a>
+              Preview CV
+            </button>
 
           </div>
 
