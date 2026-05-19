@@ -225,53 +225,136 @@ export default function App() {
         <div className="max-w-6xl mx-auto">
 
           <h2 className="text-4xl font-bold mb-12">
-            Skills
+            Skills & Technologies
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
 
-            <div className="bg-slate-900 p-8 rounded-2xl hover:-translate-y-2 transition duration-300">
-              <h3 className="text-2xl font-semibold mb-4 text-blue-400">
-                Development
+            {/* DEVELOPMENT */}
+            <div className="bg-slate-900 p-8 rounded-2xl border border-slate-800 hover:border-blue-500 hover:-translate-y-2 transition duration-300">
+
+              <h3 className="text-2xl font-semibold mb-6 text-blue-400">
+                Software Development
               </h3>
 
-              <ul className="space-y-2 text-slate-300">
-                <li>React</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-                <li>MySQL</li>
-              </ul>
+              <div className="space-y-4">
+
+                <div>
+                  <p className="mb-2">React & JavaScript</p>
+                  <div className="w-full bg-slate-700 rounded-full h-3">
+                    <div className="bg-blue-500 h-3 rounded-full w-[85%]"></div>
+                  </div>
+                </div>
+
+                <div>
+                  <p className="mb-2">Python</p>
+                  <div className="w-full bg-slate-700 rounded-full h-3">
+                    <div className="bg-blue-500 h-3 rounded-full w-[90%]"></div>
+                  </div>
+                </div>
+
+                <div>
+                  <p className="mb-2">MySQL & SQL</p>
+                  <div className="w-full bg-slate-700 rounded-full h-3">
+                    <div className="bg-blue-500 h-3 rounded-full w-[88%]"></div>
+                  </div>
+                </div>
+
+                <div>
+                  <p className="mb-2">Git & GitHub</p>
+                  <div className="w-full bg-slate-700 rounded-full h-3">
+                    <div className="bg-blue-500 h-3 rounded-full w-[80%]"></div>
+                  </div>
+                </div>
+
+              </div>
             </div>
 
-            <div className="bg-slate-900 p-8 rounded-2xl hover:-translate-y-2 transition duration-300">
-              <h3 className="text-2xl font-semibold mb-4 text-blue-400">
-                IT Support
+            {/* IT SUPPORT */}
+            <div className="bg-slate-900 p-8 rounded-2xl border border-slate-800 hover:border-blue-500 hover:-translate-y-2 transition duration-300">
+
+              <h3 className="text-2xl font-semibold mb-6 text-blue-400">
+                IT Support & Systems
               </h3>
 
-              <ul className="space-y-2 text-slate-300">
-                <li>Networking</li>
-                <li>Microsoft 365</li>
-                <li>Troubleshooting</li>
-                <li>Windows Support</li>
-              </ul>
+              <div className="space-y-4">
+
+                <div>
+                  <p className="mb-2">Networking</p>
+                  <div className="w-full bg-slate-700 rounded-full h-3">
+                    <div className="bg-green-500 h-3 rounded-full w-[85%]"></div>
+                  </div>
+                </div>
+
+                <div>
+                  <p className="mb-2">Microsoft 365</p>
+                  <div className="w-full bg-slate-700 rounded-full h-3">
+                    <div className="bg-green-500 h-3 rounded-full w-[90%]"></div>
+                  </div>
+                </div>
+
+                <div>
+                  <p className="mb-2">Troubleshooting</p>
+                  <div className="w-full bg-slate-700 rounded-full h-3">
+                    <div className="bg-green-500 h-3 rounded-full w-[95%]"></div>
+                  </div>
+                </div>
+
+                <div>
+                  <p className="mb-2">Windows Support</p>
+                  <div className="w-full bg-slate-700 rounded-full h-3">
+                    <div className="bg-green-500 h-3 rounded-full w-[92%]"></div>
+                  </div>
+                </div>
+
+              </div>
             </div>
 
-            <div className="bg-slate-900 p-8 rounded-2xl hover:-translate-y-2 transition duration-300">
-              <h3 className="text-2xl font-semibold mb-4 text-blue-400">
-                Data Analysis
+            {/* DATA ANALYTICS */}
+            <div className="bg-slate-900 p-8 rounded-2xl border border-slate-800 hover:border-blue-500 hover:-translate-y-2 transition duration-300">
+
+              <h3 className="text-2xl font-semibold mb-6 text-blue-400">
+                Data Analysis & Reporting
               </h3>
 
-              <ul className="space-y-2 text-slate-300">
-                <li>Excel Dashboards</li>
-                <li>Power BI</li>
-                <li>SQL</li>
-                <li>Reporting</li>
-              </ul>
+              <div className="space-y-4">
+
+                <div>
+                  <p className="mb-2">Excel Dashboards</p>
+                  <div className="w-full bg-slate-700 rounded-full h-3">
+                    <div className="bg-purple-500 h-3 rounded-full w-[95%]"></div>
+                  </div>
+                </div>
+
+                <div>
+                  <p className="mb-2">Power BI</p>
+                  <div className="w-full bg-slate-700 rounded-full h-3">
+                    <div className="bg-purple-500 h-3 rounded-full w-[80%]"></div>
+                  </div>
+                </div>
+
+                <div>
+                  <p className="mb-2">SQL Reporting</p>
+                  <div className="w-full bg-slate-700 rounded-full h-3">
+                    <div className="bg-purple-500 h-3 rounded-full w-[88%]"></div>
+                  </div>
+                </div>
+
+                <div>
+                  <p className="mb-2">Business Intelligence</p>
+                  <div className="w-full bg-slate-700 rounded-full h-3">
+                    <div className="bg-purple-500 h-3 rounded-full w-[82%]"></div>
+                  </div>
+                </div>
+
+              </div>
             </div>
 
           </div>
         </div>
+
       </section>
+
       {/* PROJECTS */}
 <section id="projects" className="py-24 px-6 max-w-6xl mx-auto">
 
