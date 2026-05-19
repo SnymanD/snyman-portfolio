@@ -18,8 +18,6 @@ import {
 import {
   SiJavascript,
   SiMysql,
-  SiPowerbi,
-  SiCsharp,
 } from "react-icons/si"
 
 export default function App() {
@@ -286,7 +284,7 @@ export default function App() {
                 </div>
 
                 <div className="flex items-center gap-3">
-                  <SiCsharp className="text-purple-400 text-2xl" />
+                  <FaDatabase className="text-purple-400 text-2xl" />
                   <span>C#</span>
                 </div>
 
@@ -345,7 +343,7 @@ export default function App() {
               <div className="space-y-4 text-slate-300">
 
                 <div className="flex items-center gap-3">
-                  <SiPowerbi className="text-yellow-400 text-2xl" />
+                  <FaMicrosoft className="text-yellow-400 text-2xl" />
                   <span>Power BI</span>
                 </div>
 
