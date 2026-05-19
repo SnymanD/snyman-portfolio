@@ -265,7 +265,7 @@ export default function App() {
                 </div>
 
                 <div>
-                  <p className="mb-2">Python</p>
+                  <p className="mb-2">Python & C#</p>
                   <div className="w-full bg-slate-700 rounded-full h-3">
                     <div className="bg-blue-500 h-3 rounded-full w-[90%]"></div>
                   </div>
