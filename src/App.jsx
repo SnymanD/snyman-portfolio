@@ -334,6 +334,41 @@ export default function App() {
         </form>
 
       </section>
+      {/* FOOTER */}
+      <footer className="py-8 text-center text-slate-500 border-t border-slate-800">
+
+        <p>
+          © 2026 Snyman Dhlamini. All rights reserved.
+        </p>
+
+        <div className="flex justify-center gap-6 mt-4 text-2xl">
+
+          <a
+            href="https://github.com/SnymanD"
+            target="_blank"
+            className="hover:text-blue-400 transition"
+          >
+            <FaGithub />
+          </a>
+
+          <a
+            href="mailto:dhlaminisnyman@gmail.com"
+            className="hover:text-blue-400 transition"
+          >
+            <FaEnvelope />
+          </a>
+
+          <a
+            href="https://wa.me/27837188802"
+            target="_blank"
+            className="hover:text-green-400 transition"
+          >
+            <FaWhatsapp />
+          </a>
+
+        </div>
+
+      </footer>
 
     </div>
   )
