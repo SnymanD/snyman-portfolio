@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import emailjs from "@emailjs/browser"
 import { motion } from "framer-motion"
 
@@ -32,6 +32,18 @@ export default function App() {
     message: "",
   })
 
+  const roles = [
+  "Software Developer",
+  "IT Support Specialist",
+  "Data Analyst",
+  "Systems Support Technician",
+  ]
+
+  const [roleIndex, setRoleIndex] = useState(0)
+  const [displayText, setDisplayText] = useState("")
+  const [charIndex, setCharIndex] = useState(0)
+  const [scrollProgress, setScrollProgress] = useState(0)
+
   const [isSending, setIsSending] = useState(false)
   const [statusMessage, setStatusMessage] = useState("")
   const [statusType, setStatusType] = useState("")
@@ -41,6 +53,42 @@ export default function App() {
     hidden: { opacity: 0, y: 40 },
     visible: { opacity: 1, y: 0 },
   }
+
+  useEffect(() => {
+    const currentRole = roles[roleIndex]
+
+    if (charIndex < currentRole.length) {
+      const timeout = setTimeout(() => {
+        setDisplayText((prev) => prev + currentRole[charIndex])
+        setCharIndex((prev) => prev + 1)
+      }, 100)
+
+      return () => clearTimeout(timeout)
+    } else {
+      const timeout = setTimeout(() => {
+        setDisplayText("")
+        setCharIndex(0)
+        setRoleIndex((prev) => (prev + 1) % roles.length)
+      }, 1800)
+
+      return () => clearTimeout(timeout)
+    }
+  }, [charIndex, roleIndex])
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const totalHeight =
+        document.documentElement.scrollHeight - window.innerHeight
+
+      const progress = (window.scrollY / totalHeight) * 100
+
+      setScrollProgress(progress)
+    }
+
+    window.addEventListener("scroll", handleScroll)
+
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
 
   const handleChange = (e) => {
     setFormData({
@@ -89,6 +137,14 @@ export default function App() {
           : "bg-gray-100 text-black min-h-screen transition duration-500"
       }
     >
+
+      {/* SCROLL PROGRESS BAR */}
+      <div className="fixed top-0 left-0 w-full h-1 z-[200] bg-transparent">
+        <div
+          className="h-full bg-blue-500 transition-all duration-150"
+          style={{ width: `${scrollProgress}%` }}
+        ></div>
+      </div>
 
       {/* PARTICLES */}
       <div className="fixed inset-0 overflow-hidden -z-10">
@@ -146,8 +202,9 @@ export default function App() {
             ● Available For Opportunities
           </p>
 
-          <p className="text-blue-400 mb-4 font-medium">
-            Software Developer • IT Support • Data Analyst
+          <p className="text-blue-400 mb-4 font-medium text-xl min-h-[32px]">
+            {displayText}
+            <span className="animate-pulse">|</span>
           </p>
 
           <h2 className="text-5xl md:text-7xl font-bold mb-6">
