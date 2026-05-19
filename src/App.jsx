@@ -16,6 +16,7 @@ export default function App() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    subject: "",
     message: "",
   })
 
@@ -41,6 +42,7 @@ export default function App() {
     setFormData({
       name: "",
       email: "",
+      subject: "",
       message: "",
     })
   }
@@ -423,56 +425,86 @@ export default function App() {
   </div>
 </section>
       {/* CONTACT */}
-      <section id="contact" className="py-24 px-6 max-w-4xl mx-auto">
+      <section id="contact" className="py-24 px-6 max-w-6xl mx-auto">
+        <h2 className="text-4xl font-bold mb-4 text-center">Contact Me</h2>
 
-        <h2 className="text-4xl font-bold mb-10 text-center">
-          Contact Me
-        </h2>
+        <p className="text-slate-400 text-center mb-12">
+          Have an opportunity, project, or collaboration in mind? Send me a message.
+        </p>
 
-        <form
-          onSubmit={sendEmail}
-          className="space-y-6"
-        >
+        <div className="grid md:grid-cols-2 gap-10">
+          <div className="bg-slate-900 p-8 rounded-2xl border border-slate-800">
+            <h3 className="text-2xl font-semibold mb-6 text-blue-400">
+              Send a Message
+            </h3>
 
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-            className="w-full p-4 rounded-xl bg-slate-900 border border-slate-700"
-          />
+            <form onSubmit={sendEmail} className="space-y-5">
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+                className="w-full p-4 rounded-xl bg-slate-950 border border-slate-700 focus:border-blue-500 outline-none"
+              />
 
-          <input
-            type="email"
-            name="email"
-            placeholder="Your Email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-            className="w-full p-4 rounded-xl bg-slate-900 border border-slate-700"
-          />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+                className="w-full p-4 rounded-xl bg-slate-950 border border-slate-700 focus:border-blue-500 outline-none"
+              />
 
-          <textarea
-            name="message"
-            placeholder="Your Message"
-            rows="6"
-            value={formData.message}
-            onChange={handleChange}
-            required
-            className="w-full p-4 rounded-xl bg-slate-900 border border-slate-700"
-          />
+              <input
+                type="text"
+                name="subject"
+                placeholder="Subject"
+                value={formData.subject}
+                onChange={handleChange}
+                required
+                className="w-full p-4 rounded-xl bg-slate-950 border border-slate-700 focus:border-blue-500 outline-none"
+              />
 
-          <button
-            type="submit"
-            className="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-xl font-medium"
-          >
-            Send Message
-          </button>
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                rows="6"
+                value={formData.message}
+                onChange={handleChange}
+                required
+                className="w-full p-4 rounded-xl bg-slate-950 border border-slate-700 focus:border-blue-500 outline-none"
+              />
 
-        </form>
+              <button
+                type="submit"
+                className="w-full bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-xl font-medium transition"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
 
+          <div className="space-y-6">
+            <div className="bg-slate-900 p-6 rounded-2xl border border-slate-800">
+              <h3 className="text-xl font-semibold text-blue-400 mb-2">Email</h3>
+              <p className="text-slate-300">dhlaminisnyman@gmail.com</p>
+            </div>
+
+            <div className="bg-slate-900 p-6 rounded-2xl border border-slate-800">
+              <h3 className="text-xl font-semibold text-blue-400 mb-2">WhatsApp</h3>
+              <p className="text-slate-300">+27 83 718 8802</p>
+            </div>
+
+            <div className="bg-slate-900 p-6 rounded-2xl border border-slate-800">
+              <h3 className="text-xl font-semibold text-blue-400 mb-2">GitHub</h3>
+              <p className="text-slate-300">github.com/SnymanD</p>
+            </div>
+          </div>
+        </div>
       </section>
       {/* FOOTER */}
       <footer className="py-8 text-center text-slate-500 border-t border-slate-800">
