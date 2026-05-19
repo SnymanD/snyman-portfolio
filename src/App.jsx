@@ -432,7 +432,7 @@ export default function App() {
         </p>
 
         <p className="text-sm text-blue-400">
-          Python • MySQL • Desktop Application • Database Systems
+          C# • MySQL • Desktop Application • Database Systems • Python
         </p>
 
       </div>
