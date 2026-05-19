@@ -7,7 +7,20 @@ import {
   FaEnvelope,
   FaMoon,
   FaSun,
+  FaReact,
+  FaPython,
+  FaGitAlt,
+  FaDatabase,
+  FaWindows,
 } from "react-icons/fa"
+
+import {
+  SiJavascript,
+  SiMysql,
+  SiPowerbi,
+  SiCsharp,
+  SiMicrosoft,
+} from "react-icons/si"
 
 export default function App() {
 
@@ -255,34 +268,36 @@ export default function App() {
                 Software Development
               </h3>
 
-              <div className="space-y-4">
+              <div className="space-y-4 text-slate-300">
 
-                <div>
-                  <p className="mb-2">React & JavaScript</p>
-                  <div className="w-full bg-slate-700 rounded-full h-3">
-                    <div className="bg-blue-500 h-3 rounded-full w-[85%]"></div>
-                  </div>
+                <div className="flex items-center gap-3">
+                  <FaReact className="text-cyan-400 text-2xl" />
+                  <span>React</span>
                 </div>
 
-                <div>
-                  <p className="mb-2">Python & C#</p>
-                  <div className="w-full bg-slate-700 rounded-full h-3">
-                    <div className="bg-blue-500 h-3 rounded-full w-[90%]"></div>
-                  </div>
+                <div className="flex items-center gap-3">
+                  <SiJavascript className="text-yellow-400 text-2xl" />
+                  <span>JavaScript</span>
                 </div>
 
-                <div>
-                  <p className="mb-2">MySQL & SQL</p>
-                  <div className="w-full bg-slate-700 rounded-full h-3">
-                    <div className="bg-blue-500 h-3 rounded-full w-[88%]"></div>
-                  </div>
+                <div className="flex items-center gap-3">
+                  <FaPython className="text-blue-400 text-2xl" />
+                  <span>Python</span>
                 </div>
 
-                <div>
-                  <p className="mb-2">Git & GitHub</p>
-                  <div className="w-full bg-slate-700 rounded-full h-3">
-                    <div className="bg-blue-500 h-3 rounded-full w-[80%]"></div>
-                  </div>
+                <div className="flex items-center gap-3">
+                  <SiCsharp className="text-purple-400 text-2xl" />
+                  <span>C#</span>
+                </div>
+
+                <div className="flex items-center gap-3">
+                  <SiMysql className="text-orange-400 text-2xl" />
+                  <span>MySQL</span>
+                </div>
+
+                <div className="flex items-center gap-3">
+                  <FaGitAlt className="text-red-400 text-2xl" />
+                  <span>Git & GitHub</span>
                 </div>
 
               </div>
@@ -295,34 +310,26 @@ export default function App() {
                 IT Support & Systems
               </h3>
 
-              <div className="space-y-4">
+              <div className="space-y-4 text-slate-300">
 
-                <div>
-                  <p className="mb-2">Networking</p>
-                  <div className="w-full bg-slate-700 rounded-full h-3">
-                    <div className="bg-green-500 h-3 rounded-full w-[85%]"></div>
-                  </div>
+                <div className="flex items-center gap-3">
+                  <FaWindows className="text-blue-400 text-2xl" />
+                  <span>Windows Support</span>
                 </div>
 
-                <div>
-                  <p className="mb-2">Microsoft 365</p>
-                  <div className="w-full bg-slate-700 rounded-full h-3">
-                    <div className="bg-green-500 h-3 rounded-full w-[90%]"></div>
-                  </div>
+                <div className="flex items-center gap-3">
+                  <SiMicrosoft className="text-green-400 text-2xl" />
+                  <span>Microsoft 365</span>
                 </div>
 
-                <div>
-                  <p className="mb-2">Troubleshooting</p>
-                  <div className="w-full bg-slate-700 rounded-full h-3">
-                    <div className="bg-green-500 h-3 rounded-full w-[95%]"></div>
-                  </div>
+                <div className="flex items-center gap-3">
+                  <FaDatabase className="text-yellow-400 text-2xl" />
+                  <span>Networking</span>
                 </div>
 
-                <div>
-                  <p className="mb-2">Windows Support</p>
-                  <div className="w-full bg-slate-700 rounded-full h-3">
-                    <div className="bg-green-500 h-3 rounded-full w-[92%]"></div>
-                  </div>
+                <div className="flex items-center gap-3">
+                  <FaGithub className="text-white text-2xl" />
+                  <span>Troubleshooting</span>
                 </div>
 
               </div>
@@ -335,34 +342,26 @@ export default function App() {
                 Data Analysis & Reporting
               </h3>
 
-              <div className="space-y-4">
+              <div className="space-y-4 text-slate-300">
 
-                <div>
-                  <p className="mb-2">Excel Dashboards</p>
-                  <div className="w-full bg-slate-700 rounded-full h-3">
-                    <div className="bg-purple-500 h-3 rounded-full w-[95%]"></div>
-                  </div>
+                <div className="flex items-center gap-3">
+                  <SiPowerbi className="text-yellow-400 text-2xl" />
+                  <span>Power BI</span>
                 </div>
 
-                <div>
-                  <p className="mb-2">Power BI</p>
-                  <div className="w-full bg-slate-700 rounded-full h-3">
-                    <div className="bg-purple-500 h-3 rounded-full w-[80%]"></div>
-                  </div>
+                <div className="flex items-center gap-3">
+                  <FaDatabase className="text-green-400 text-2xl" />
+                  <span>SQL Reporting</span>
                 </div>
 
-                <div>
-                  <p className="mb-2">SQL Reporting</p>
-                  <div className="w-full bg-slate-700 rounded-full h-3">
-                    <div className="bg-purple-500 h-3 rounded-full w-[88%]"></div>
-                  </div>
+                <div className="flex items-center gap-3">
+                  <FaPython className="text-blue-400 text-2xl" />
+                  <span>Python Analytics</span>
                 </div>
 
-                <div>
-                  <p className="mb-2">Business Intelligence</p>
-                  <div className="w-full bg-slate-700 rounded-full h-3">
-                    <div className="bg-purple-500 h-3 rounded-full w-[82%]"></div>
-                  </div>
+                <div className="flex items-center gap-3">
+                  <SiMicrosoft className="text-green-400 text-2xl" />
+                  <span>Excel Dashboards</span>
                 </div>
 
               </div>
