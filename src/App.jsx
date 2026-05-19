@@ -212,8 +212,9 @@ export default function App() {
           </h2>
 
           <p className="max-w-2xl text-lg md:text-xl text-slate-400 mb-8 leading-8">
-            I build practical digital solutions, support business IT systems,
-            and create data-driven dashboards that help organisations work smarter.
+            I build modern digital solutions, support business-critical IT systems, 
+            and create data-driven applications and dashboards that improve efficiency, 
+            automate processes, and solve real-world business challenges.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
