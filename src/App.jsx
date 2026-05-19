@@ -36,7 +36,7 @@ export default function App() {
       "exlFR0zP0LS6wQNN4"
     )
 
-    alert("Message sent successfully!")
+    alert("Thank you! Your message has been sent successfully.")
 
     setFormData({
       name: "",
