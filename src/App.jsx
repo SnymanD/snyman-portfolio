@@ -12,6 +12,7 @@ import {
   FaGitAlt,
   FaDatabase,
   FaWindows,
+  FaMicrosoft,
 } from "react-icons/fa"
 
 import {
