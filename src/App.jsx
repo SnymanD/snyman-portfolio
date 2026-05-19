@@ -20,6 +20,10 @@ export default function App() {
     message: "",
   })
 
+  const [isSending, setIsSending] = useState(false)
+  const [statusMessage, setStatusMessage] = useState("")
+  const [statusType, setStatusType] = useState("") 
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -30,14 +34,20 @@ export default function App() {
   const sendEmail = (e) => {
     e.preventDefault()
 
-    emailjs.send(
-      "service_snyman",
-      "template_oq4ly6t",
-      formData,
-      "exlFR0zP0LS6wQNN4"
+    setIsSending(true)
+    setStatusMessage("")
+    setStatusType("")
+
+    try {
+      await emailjs.send(
+        "service_snyman",
+        "template_oq4ly6t",
+        formData,
+        "exlFR0zP0LS6wQNN4"
     )
 
-    alert("Thank you! Your message has been sent successfully.")
+    setStatusType("success")
+    setStatusMessage("Thank you! Your message has been sent successfully.")
 
     setFormData({
       name: "",
@@ -45,7 +55,13 @@ export default function App() {
       subject: "",
       message: "",
     })
+  } catch (error) {
+    setStatusType("error")
+    setStatusMessage("Sorry, something went wrong. Please try again or email me directly.")
+  } finally {
+    setIsSending(false)
   }
+}
 
   return (
     <div
@@ -481,10 +497,24 @@ export default function App() {
 
               <button
                 type="submit"
-                className="w-full bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-xl font-medium transition"
+                disabled={isSending}
+                className={`w-full px-8 py-4 rounded-xl font-medium transition ${
+                  isSending
+                    ? "bg-slate-600 cursor-not-allowed"
+                    : "bg-blue-600 hover:bg-blue-700"
+                }`}
               >
-                Send Message
+                {isSending ? "Sending..." : "Send Message"}
               </button>
+              {statusMessage && (
+                <p
+                  className={`mt-4 text-center font-medium ${
+                    statusType === "success" ? "text-green-400" : "text-red-400"
+                  }`}
+                >
+                  {statusMessage}
+                </p>
+              )}
             </form>
           </div>
 
