@@ -1,5 +1,6 @@
 import { useState } from "react"
 import emailjs from "@emailjs/browser"
+import { motion } from "framer-motion"
 
 import {
   FaGithub,
@@ -33,7 +34,12 @@ export default function App() {
 
   const [isSending, setIsSending] = useState(false)
   const [statusMessage, setStatusMessage] = useState("")
-  const [statusType, setStatusType] = useState("") 
+  const [statusType, setStatusType] = useState("")
+
+  const fadeUp = {
+    hidden: { opacity: 0, y: 40 },
+    visible: { opacity: 1, y: 0 },
+  }
 
   const handleChange = (e) => {
     setFormData({
@@ -214,6 +220,40 @@ export default function App() {
         </div>
 
       </section>
+
+      {/* STATISTICS */}
+      <motion.section
+        className="py-16 px-6 max-w-6xl mx-auto"
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.7 }}
+      >
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+
+          <div className="bg-slate-900 p-6 rounded-2xl border border-slate-800 hover:border-blue-500 transition">
+            <h3 className="text-4xl font-bold text-blue-400">2+</h3>
+            <p className="text-slate-300 mt-2">Years Experience</p>
+          </div>
+
+          <div className="bg-slate-900 p-6 rounded-2xl border border-slate-800 hover:border-blue-500 transition">
+            <h3 className="text-4xl font-bold text-blue-400">5+</h3>
+            <p className="text-slate-300 mt-2">Projects Built</p>
+          </div>
+
+          <div className="bg-slate-900 p-6 rounded-2xl border border-slate-800 hover:border-blue-500 transition">
+            <h3 className="text-4xl font-bold text-blue-400">6+</h3>
+            <p className="text-slate-300 mt-2">Branches Supported</p>
+          </div>
+
+          <div className="bg-slate-900 p-6 rounded-2xl border border-slate-800 hover:border-blue-500 transition">
+            <h3 className="text-4xl font-bold text-blue-400">3</h3>
+            <p className="text-slate-300 mt-2">Core Skill Areas</p>
+          </div>
+
+        </div>
+      </motion.section>
 
       {/* ABOUT */}
       <section id="about" className="py-24 px-6 max-w-6xl mx-auto">
