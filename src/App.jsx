@@ -30,10 +30,10 @@ export default function App() {
     e.preventDefault()
 
     emailjs.send(
-      "YOUR_SERVICE_ID",
-      "YOUR_TEMPLATE_ID",
+      "service_snyman",
+      "template_oq4ly6t",
       formData,
-      "YOUR_PUBLIC_KEY"
+      "exlFR0zP0LS6wQNN4"
     )
 
     alert("Message sent successfully!")
