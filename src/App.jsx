@@ -158,9 +158,12 @@ export default function App() {
 
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
 
-          <h1 className="font-bold text-xl">
-            Snyman Dhlamini
-          </h1>
+        <a
+          href="#home"
+          className="font-bold text-xl hover:text-blue-400 transition duration-300 cursor-pointer"
+        >
+          Snyman Dhlamini
+        </a> 
 
           <div className="flex items-center gap-6">
 
@@ -194,7 +197,7 @@ export default function App() {
       </nav>
 
       {/* HERO */}
-      <section className="min-h-screen flex flex-col-reverse md:flex-row justify-center items-center gap-12 px-6 pt-24 max-w-6xl mx-auto">
+      <section id="home" className="min-h-screen flex flex-col-reverse md:flex-row justify-center items-center gap-12 px-6 pt-24 max-w-6xl mx-auto">
 
         <div className="text-center md:text-left">
 
