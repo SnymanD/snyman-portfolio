@@ -135,6 +135,10 @@ export default function App() {
 
         <div className="text-center md:text-left">
 
+          <p className="text-green-400 font-medium">
+            ● Available for opportunities
+          </p>
+
           <p className="text-blue-400 mb-4 font-medium">
             Software Developer • IT Support • Data Analyst
           </p>
