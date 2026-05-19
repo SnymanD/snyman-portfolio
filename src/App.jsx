@@ -189,10 +189,32 @@ export default function App() {
           About Me
         </h2>
 
-        <p className="leading-8 text-lg">
-          I am a Mathematical and Computer Science graduate with experience
-          in software development, IT support, systems administration,
-          and data analysis.
+        <p className="leading-8 text-lg text-slate-300">
+            I am a passionate and solutions-driven Mathematical and Computer Science graduate
+            with practical experience in software development, IT support, systems administration,
+            database management, and data analysis.
+
+            I have worked in real business environments supporting IT operations,
+            managing sensitive organisational data, troubleshooting technical issues,
+            and developing systems that improve efficiency and decision-making.
+
+            My experience includes supporting multi-branch business operations,
+            maintaining reliable IT infrastructure, handling financial and client data,
+            building reporting dashboards, and creating software solutions tailored to
+            business needs.
+
+            I enjoy solving real-world problems using technology and continuously improving
+            my skills in modern software development, data analytics, and digital systems.
+            I am particularly interested in building scalable applications, business intelligence
+            solutions, automation systems, and user-focused digital experiences.
+
+            In addition to technical work, I also founded SnyTech Solutions,
+            where I focus on IT support services, web development, hosting solutions,
+            and digital transformation for businesses.
+
+            My goal is to contribute to innovative teams where I can apply my technical,
+            analytical, and problem-solving skills to create impactful solutions while
+            continuing to grow as a technology professional.
         </p>
 
       </section>
