@@ -31,7 +31,7 @@ export default function App() {
     })
   }
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault()
 
     setIsSending(true)
