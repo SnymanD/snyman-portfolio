@@ -612,6 +612,50 @@ export default function App() {
         </div>
 
       </footer>
+      {/* RESUME PREVIEW MODAL */}
+      {showResume && (
+        <div className="fixed inset-0 bg-black/80 z-[100] flex items-center justify-center px-4">
+          <div className="bg-slate-900 w-full max-w-5xl h-[90vh] rounded-2xl border border-slate-700 overflow-hidden">
+
+            <div className="flex justify-between items-center px-6 py-4 border-b border-slate-700">
+              <h3 className="text-xl font-semibold text-blue-400">
+                Resume Preview
+              </h3>
+
+              <button
+                onClick={() => setShowResume(false)}
+                className="text-slate-300 hover:text-red-400 text-2xl"
+              >
+                ×
+              </button>
+            </div>
+
+            <iframe
+              src="/cv.pdf"
+              title="Snyman Dhlamini CV"
+              className="w-full h-[calc(90vh-140px)]"
+            />
+
+            <div className="flex justify-end gap-4 px-6 py-4 border-t border-slate-700">
+              <button
+                onClick={() => setShowResume(false)}
+                className="border border-slate-500 hover:border-red-400 px-6 py-2 rounded-xl"
+              >
+                Close
+              </button>
+
+              <a
+                href="/cv.pdf"
+                download
+                className="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-xl"
+              >
+                Download CV
+              </a>
+            </div>
+
+          </div>
+        </div>
+      )}
 
     </div>
   )
