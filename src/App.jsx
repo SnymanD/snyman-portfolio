@@ -628,7 +628,7 @@ export default function App() {
 
             <div className="bg-slate-900 p-6 rounded-2xl border border-slate-800">
               <h3 className="text-xl font-semibold text-blue-400 mb-2">WhatsApp</h3>
-              <p className="text-slate-300">+27 83 718 8802</p>
+              <p className="text-slate-300">+27 76 633 0663</p>
             </div>
 
             <div className="bg-slate-900 p-6 rounded-2xl border border-slate-800">
@@ -663,7 +663,7 @@ export default function App() {
           </a>
 
           <a
-            href="https://wa.me/27837188802"
+            href="https://wa.me/27766330663"
             target="_blank"
             className="hover:text-green-400 transition"
           >
